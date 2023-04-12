@@ -5,7 +5,7 @@ class Mahasiswa {
 private:
 	int nim;
 	string nama;
-	float nilai; 
+	float nilai;
 public:
 	void input() {
 		cout << "Masukkan NIM : ";
@@ -13,6 +13,15 @@ public:
 		cout << "Masukkan Nama : ";
 		cin >> nama;
 		cout << "Masukkan Nilai : ";
-		cin >> nilai; 
+		cin >> nilai;
 	}
+	void printData();
+};
+
+void Mahasiswa::printData() {
+	cout << "\nData Mahasiswa";
+	cout << "\nNIM : " << nim;
+	cout << "\nNamanya : " << nama;
+	cout << "\nNilai : " << nilai; 
+
 }
